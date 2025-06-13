@@ -1,4 +1,4 @@
-# Estuda + 🎓🖥️
+# Estuda Mais 🎓🖥️
 
 ![GitHub release](https://img.shields.io/github/v/release/TiagoSantoss30/projeto-estuda-mais)
 ![GitHub code size](https://img.shields.io/github/languages/code-size/TiagoSantoss30/projeto-estuda-mais)
@@ -18,4 +18,3 @@ Nossa proposta é oferecer aos usuários um site com acesso **gratuito** a:
 - ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
 - ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-
