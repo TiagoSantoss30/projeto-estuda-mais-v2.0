@@ -1,4 +1,4 @@
-# Estuda Mais 🎓🖥️
+# Estuda + 🎓🖥️
 
 ![GitHub release](https://img.shields.io/github/v/release/TiagoSantoss30/projeto-estuda-mais)
 ![GitHub code size](https://img.shields.io/github/languages/code-size/TiagoSantoss30/projeto-estuda-mais)
