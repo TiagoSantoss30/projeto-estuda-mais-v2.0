@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/index.jsx";
 import itaLogo from "../../assets/ita-logo.svg";
 import imeLogo from "../../assets/ime-logo.svg";
 import fatecLogo from "../../assets/fatec-logo.svg";
-import studentAreaImg from "../../assets/studentArea-img1.svg";
+import studentAreaImg from "../../assets/StudentArea/studentArea-img1.svg";
 
 function StudentArea() {
     return (

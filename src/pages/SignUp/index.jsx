@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import WhiteHeader from "../../components/WhiteHeader/index.jsx";
 import SignUpForm from "../../components/SignUpForm/index.jsx";
-import signUpImg1 from "../../assets/signUp-img1.svg";
+import signUpImg1 from "../../assets/SignUp/signUp-img1.svg";
 
 function SignUp() {
   return (

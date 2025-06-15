@@ -2,8 +2,8 @@ import * as S from "./styles";
 import WhiteHeader from "../../components/WhiteHeader/index.jsx";
 import HomeButtons from "../../components/HomeButtons/index.jsx"
 import Footer from "../../components/Footer/index.jsx";
-import homeImg1 from "../../assets/home-img1.svg";
-import homeImg2 from "../../assets/home-img2.svg";
+import homeImg1 from "../../assets/Home/home-img1.svg";
+import homeImg2 from "../../assets/Home/home-img2.svg";
 
 function Home(){
     return (

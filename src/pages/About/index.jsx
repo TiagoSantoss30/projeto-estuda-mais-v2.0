@@ -1,10 +1,10 @@
 import * as S from "./styles";
 import BlueHeader from "../../components/BlueHeader/index.jsx";
 import Footer from "../../components/Footer/index.jsx";
-import homeImg1 from "../../assets/home-img1.svg";
-import aboutImg1 from "../../assets/about-img1.svg";
-import aboutImg2 from "../../assets/about-img2.svg";
-import aboutImg3 from "../../assets/about-img3.svg";
+import homeImg1 from "../../assets/Home/home-img1.svg";
+import aboutImg1 from "../../assets/About/about-img1.svg";
+import aboutImg2 from "../../assets/About/about-img2.svg";
+import aboutImg3 from "../../assets/About/about-img3.svg";
 import { FaCheck } from "react-icons/fa6";
 
 function About() {

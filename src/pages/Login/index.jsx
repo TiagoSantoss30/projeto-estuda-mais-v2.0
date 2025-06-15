@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import LoginForm from "../../components/LoginForm/index.jsx";
-import LoginImg from "../../assets/login-img1.svg";
+import LoginImg from "../../assets/Login/login-img1.svg";
 
 function Login() {
   return (
