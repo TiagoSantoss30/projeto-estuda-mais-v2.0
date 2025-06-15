@@ -4,6 +4,8 @@ import About from "@pages/About";
 import SignUp from "@pages/SignUp";
 import Login from "@pages/Login";
 import StudentArea from "@pages/StudentArea";
+import ItaPage from "@pages/ItaPage";
+import ImePage from "@pages/ImePage";
 
 
 function AppRoutes() {
@@ -14,6 +16,8 @@ function AppRoutes() {
       <Route path="/signUp" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
       <Route path="/studentArea" element={<StudentArea />} />
+      <Route path="/itaPage" element={<ItaPage />} />
+      <Route path="/imePage" element={<ImePage />} />
     </Routes>
   );
 }
