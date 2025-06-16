@@ -11,6 +11,7 @@ import InfoSection from "../../components/InfoSection/index.jsx";
 import TimelineCard from "../../components/TimelineCard/index.jsx";
 import aboutImg3 from "../../assets/About/about-img3.svg";
 import Footer from "../../components/Footer/index.jsx";
+import ExamCard from "../../components/ExamCard/index.jsx";
 
 function ItaPage() {
   return (
@@ -34,13 +35,13 @@ function ItaPage() {
         <TimelineCard
           imgSrc={download1}
           imgAltText="Ilustração de download"
-          file={"/Cronograma-Intensivo-ITA.pdf"}
+          file={"/cronograma-intensivo-ita.pdf"}
           label={"Baixar Cronograma Intensivo"}
         />
         <TimelineCard
           imgSrc={download2}
           imgAltText="Ilustração de download"
-          file={"/Cronograma-Extensivo-ITA.pdf"}
+          file={"/cronograma-extensivo-ita.pdf"}
           label={"Baixar Cronograma Extensivo"}
         />
       </S.TimelineSection>
@@ -61,11 +62,27 @@ function ItaPage() {
         text="BIBLIOTECA DIGITAL"
       />
 
-      <S.LibrarySection>
-        <S.CardSection></S.CardSection>
+      <S.ExamsSection>
+        <div>
+          <h2>
+            Primeira Fase <span>2024</span>
+          </h2>
 
-        <S.CardSection></S.CardSection>
-      </S.LibrarySection>
+          <ExamCard label={"Baixar Prova"} />
+          <ExamCard label={"Baixar Gabarito"} />
+        </div>
+      </S.ExamsSection>
+
+      <S.ExamsSection>
+        <div>
+          <h2>
+            Segunda Fase <span>2024</span>
+          </h2>
+
+          <ExamCard label={"Matemática"} />
+          <ExamCard label={"Física"} />
+        </div>
+      </S.ExamsSection>
 
       <Footer />
     </>
