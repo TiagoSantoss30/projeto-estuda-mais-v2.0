@@ -27,6 +27,7 @@ export const Div = styled.div`
     font-family: "Montserrat", sans-serif;
     color: #3f51b5;
     font-weight: 700;
+    transition: background-color 0.3s;
 
     &:hover {
       background-color: #fcd34d;

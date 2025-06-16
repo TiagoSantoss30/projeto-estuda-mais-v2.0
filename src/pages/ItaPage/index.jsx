@@ -10,8 +10,9 @@ import StudentAreaHeader from "../../components/StudentAreaHeader/index.jsx";
 import InfoSection from "../../components/InfoSection/index.jsx";
 import TimelineCard from "../../components/TimelineCard/index.jsx";
 import aboutImg3 from "../../assets/About/about-img3.svg";
+import itaExamImg from "../../assets/ita_fase1.pdf.jpg"
+import einstein from "../../assets/einstein.svg";
 import Footer from "../../components/Footer/index.jsx";
-import ExamCard from "../../components/ExamCard/index.jsx";
 
 function ItaPage() {
   return (
@@ -62,27 +63,44 @@ function ItaPage() {
         text="BIBLIOTECA DIGITAL"
       />
 
-      <S.ExamsSection>
-        <div>
-          <h2>
-            Primeira Fase <span>2024</span>
-          </h2>
+      <S.ExamSection>
+        <S.ExamSection_PrimeiraFase>
+          <img src={itaExamImg} alt="Foto da primeira página da prova" />
 
-          <ExamCard label={"Baixar Prova"} />
-          <ExamCard label={"Baixar Gabarito"} />
-        </div>
-      </S.ExamsSection>
+          <div>
+            <h2>
+              Primeira <span>Fase</span>
+            </h2>
+            <p>Ano Da Prova: 2024</p>
+            <p>Quantidade De Páginas: 22 </p>
 
-      <S.ExamsSection>
-        <div>
-          <h2>
-            Segunda Fase <span>2024</span>
-          </h2>
+            <S.ExamSection_PrimeiraFase_botoes>
+              <a href="#">Baixar Prova</a>
+              <a href="#">Baixar Gabarito</a>
+            </S.ExamSection_PrimeiraFase_botoes>
+          </div>
+        </S.ExamSection_PrimeiraFase>
+      </S.ExamSection>
 
-          <ExamCard label={"Matemática"} />
-          <ExamCard label={"Física"} />
-        </div>
-      </S.ExamsSection>
+      <S.ExamSection>
+        <S.ExamSection_SegundaFase>
+          <img src={einstein} alt="Ilustração Do Albert Einstein" />
+
+          <div>
+            <h2>
+              Segunda <span>Fase</span>
+            </h2>
+            <p>Ano Da Prova: 2024</p>
+
+            <S.ExamSection_SegundaFase_botoes>
+              <a href="#">Matemática</a>
+              <a href="#">Física</a>
+              <a href="#">Química</a>
+              <a href="#">Redação</a>
+            </S.ExamSection_SegundaFase_botoes>
+          </div>
+        </S.ExamSection_SegundaFase>
+      </S.ExamSection>
 
       <Footer />
     </>

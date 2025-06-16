@@ -10,6 +10,7 @@ import download2 from "../../assets/download2.svg";
 import TimelineCard from "../../components/TimelineCard/index.jsx";
 import aboutImg3 from "../../assets/About/about-img3.svg";
 import books from "../../assets/Books.svg";
+import imeProvaImg from "../../assets/ime_prova.jpg";
 import Footer from "../../components/Footer/index.jsx";
 
 function ImePage() {
@@ -61,11 +62,23 @@ function ImePage() {
         text="BIBLIOTECA DIGITAL"
       />
 
-      <S.LibrarySection>
-        <S.CardSection></S.CardSection>
+      <S.ExamSection>
+        <S.ExamSectionContainer>
+          <img src={imeProvaImg} alt="Foto da primeira página da prova" />
 
-        <S.CardSection></S.CardSection>
-      </S.LibrarySection>
+          <div>
+            <h2>Prova <span>Geral</span></h2>
+
+            <p>Ano Da Prova: 2024/2025</p>
+            <p>Quantidade De Páginas: 24 </p>
+
+            <S.ExamSectionContainerBotoes>
+              <a href="#">Baixar Prova</a>
+              <a href="#">Baixar Gabarito</a>
+            </S.ExamSectionContainerBotoes>
+          </div>
+        </S.ExamSectionContainer>
+      </S.ExamSection>
 
       <Footer />
     </>
