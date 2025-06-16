@@ -5,6 +5,8 @@ import BlueHeader from "../../components/BlueHeader/index.jsx";
 import imeLogo from "../../assets/ime-logo.svg";
 import calendar from "../../assets/calendar.svg";
 import teacher from "../../assets/teacher.svg";
+import download1 from "../../assets/download1.svg";
+import download2 from "../../assets/download2.svg";
 import TimelineCard from "../../components/TimelineCard/index.jsx";
 import aboutImg3 from "../../assets/About/about-img3.svg";
 import books from "../../assets/Books.svg";
@@ -29,8 +31,18 @@ function ImePage() {
       />
 
       <S.TimelineSection>
-        <TimelineCard />
-        <TimelineCard />
+        <TimelineCard
+          imgSrc={download1}
+          imgAltText="Ilustração de download"
+          file={"/Cronograma-Intensivo-IME.pdf"}
+          label={"Baixar Cronograma Intensivo"}
+        />
+        <TimelineCard
+          imgSrc={download2}
+          imgAltText="Ilustração de download"
+          file={"/Cronograma-Extensivo-IME.pdf"}
+          label={"Baixar Cronograma Extensivo"}
+        />
       </S.TimelineSection>
 
       <BlueHeader
@@ -55,7 +67,7 @@ function ImePage() {
         <S.CardSection></S.CardSection>
       </S.LibrarySection>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }

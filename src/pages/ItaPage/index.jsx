@@ -4,6 +4,8 @@ import BlueHeader from "../../components/BlueHeader/index.jsx";
 import calendar from "../../assets/calendar.svg";
 import teacher from "../../assets/teacher.svg";
 import books from "../../assets/Books.svg";
+import download1 from "../../assets/download1.svg";
+import download2 from "../../assets/download2.svg";
 import StudentAreaHeader from "../../components/StudentAreaHeader/index.jsx";
 import InfoSection from "../../components/InfoSection/index.jsx";
 import TimelineCard from "../../components/TimelineCard/index.jsx";
@@ -29,8 +31,18 @@ function ItaPage() {
       />
 
       <S.TimelineSection>
-        <TimelineCard />
-        <TimelineCard />
+        <TimelineCard
+          imgSrc={download1}
+          imgAltText="Ilustração de download"
+          file={"/Cronograma-Intensivo-ITA.pdf"}
+          label={"Baixar Cronograma Intensivo"}
+        />
+        <TimelineCard
+          imgSrc={download2}
+          imgAltText="Ilustração de download"
+          file={"/Cronograma-Extensivo-ITA.pdf"}
+          label={"Baixar Cronograma Extensivo"}
+        />
       </S.TimelineSection>
 
       <BlueHeader
