@@ -8,14 +8,18 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20%;
+  align-items: center;
+
+  img{
+    width: 80%;
+  }
 
   a {
-    margin-top: 50%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-self: center;
+    text-align: center;
     padding: 1rem;
     background-color: #fbbf24;
     border-radius: 20px;
