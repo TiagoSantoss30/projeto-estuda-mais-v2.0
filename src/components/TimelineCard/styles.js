@@ -10,7 +10,7 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
 
-  img{
+  img {
     width: 80%;
   }
 
@@ -27,5 +27,9 @@ export const Div = styled.div`
     font-family: "Montserrat", sans-serif;
     color: #3f51b5;
     font-weight: 700;
+
+    &:hover {
+      background-color: #fcd34d;
+    }
   }
 `;
