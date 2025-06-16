@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Link = styled.a`
+export const LinkHref = styled(Link)`
   text-decoration: none;
   transition: transform 0.3s;
 
