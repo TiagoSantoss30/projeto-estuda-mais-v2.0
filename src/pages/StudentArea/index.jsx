@@ -16,7 +16,7 @@ function StudentArea() {
 
         <S.Container>
           <StudentAreaCard
-            CardHref=""
+            CardHref={"/itaPage"}
             CardImg={itaLogo}
             CardImgAltText="Logo Do (ITA)"
             CardImgWidth={309}
@@ -24,7 +24,7 @@ function StudentArea() {
             CardText="INSTITUTO TECNOLÓGICO DE AERONAUTICA (ITA)"
           />
           <StudentAreaCard
-            CardHref=""
+            CardHref={"/imePage"}
             CardImg={imeLogo}
             CardImgAltText="Logo Do (IME)"
             CardImgWidth={309}
