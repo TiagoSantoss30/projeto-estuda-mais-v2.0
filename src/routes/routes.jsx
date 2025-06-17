@@ -7,7 +7,6 @@ import StudentArea from "@pages/StudentArea";
 import ItaPage from "@pages/ItaPage";
 import ImePage from "@pages/ImePage";
 
-
 function AppRoutes() {
   return (
     <Routes>
