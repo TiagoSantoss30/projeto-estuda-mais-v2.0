@@ -1,17 +1,19 @@
 import * as S from "./styles";
-import StudentAreaHeader from "../../components/StudentAreaHeader/index.jsx";
-import InfoSection from "../../components/InfoSection/index.jsx";
-import BlueHeader from "../../components/BlueHeader/index.jsx";
-import imeLogo from "../../assets/ime-logo.svg";
-import calendar from "../../assets/calendar.svg";
-import teacher from "../../assets/teacher.svg";
-import download1 from "../../assets/download1.svg";
-import download2 from "../../assets/download2.svg";
-import TimelineCard from "../../components/TimelineCard/index.jsx";
+
+import StudentAreaHeader from "../../components/StudentAreaHeader";
+import BlueHeader from "../../components/BlueHeader";
+import TimelineCard from "../../components/TimelineCard";
+import InfoSection from "../../components/InfoSection";
+import Footer from "../../components/Footer";
+
+import imeLogo from "../../assets/Ime/ime-logo.svg";
+import calendar from "../../assets/General/calendar-illustration.svg";
+import download1 from "../../assets/General/download-illustration1.svg";
+import download2 from "../../assets/General/download-illustration2.svg";
+import teacher from "../../assets/General/teacher-illustration.svg";
 import aboutImg3 from "../../assets/About/about-img3.svg";
-import books from "../../assets/Books.svg";
-import imeProvaImg from "../../assets/ime_prova.jpg";
-import Footer from "../../components/Footer/index.jsx";
+import books from "../../assets/General/books-illustration.svg";
+import imeExamImg from "../../assets/Ime/ime-pagina-da-prova.jpg"
 
 function ImePage() {
   return (
@@ -65,7 +67,7 @@ function ImePage() {
 
       <S.ExamSection>
         <S.ExamSectionContainer>
-          <img src={imeProvaImg} alt="Foto da primeira página da prova" />
+          <img src={imeExamImg} alt="Foto da primeira página da prova" />
 
           <div>
             <h2>Prova <span>Geral</span></h2>
@@ -74,8 +76,8 @@ function ImePage() {
             <p>Quantidade De Páginas: 24 </p>
 
             <S.ExamSectionContainerBotoes>
-              <a href="#">Baixar Prova</a>
-              <a href="#">Baixar Gabarito</a>
+              <a href="/ime-prova.pdf" target="_blank">Baixar Prova</a>
+              <a href="/ime-gabarito-da-prova.pdf" target="_blank">Baixar Gabarito</a>
             </S.ExamSectionContainerBotoes>
           </div>
         </S.ExamSectionContainer>

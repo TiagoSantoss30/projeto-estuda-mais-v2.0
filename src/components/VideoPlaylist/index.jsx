@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import onlineLearning from "../../assets/onlineLearning.svg";
+import onlineLearning from "../../assets/Ita/online-learning-illustration.svg";
 import { BiMath } from "react-icons/bi";
 import { GiAtom } from "react-icons/gi";
 import { FaPencilAlt } from "react-icons/fa";

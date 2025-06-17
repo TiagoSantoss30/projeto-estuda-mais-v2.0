@@ -1,8 +1,8 @@
 import * as S from "./styles";
 import StudentAreaCard from "../../components/StudentAreaCard/index.jsx";
 import Footer from "../../components/Footer/index.jsx";
-import itaLogo from "../../assets/ita-logo.svg";
-import imeLogo from "../../assets/ime-logo.svg";
+import itaLogo from "../../assets/Ita/ita-logo.svg";
+import imeLogo from "../../assets/Ime/ime-logo.svg";
 import fatecLogo from "../../assets/fatec-logo.svg";
 import studentAreaImg from "../../assets/StudentArea/studentArea-img1.svg";
 
