@@ -8,10 +8,10 @@ export const TimelineSection = styled.section`
 `
 
 export const PlaylistSection = styled.section`
-  padding-top: 5%;
+  padding: 5% 0;
   display: flex;
-  justify-content: center;
-
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export const ExamSection = styled.section`

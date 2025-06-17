@@ -35,13 +35,13 @@ function ImePage() {
         <TimelineCard
           imgSrc={download1}
           imgAltText="Ilustração de download"
-          file={"/Cronograma-Intensivo-IME.pdf"}
+          file={"/cronograma-intensivo-ime.pdf"}
           label={"Baixar Cronograma Intensivo"}
         />
         <TimelineCard
           imgSrc={download2}
           imgAltText="Ilustração de download"
-          file={"/Cronograma-Extensivo-IME.pdf"}
+          file={"/cronograma-extensivo-ime.pdf"}
           label={"Baixar Cronograma Extensivo"}
         />
       </S.TimelineSection>
@@ -53,6 +53,7 @@ function ImePage() {
       />
 
       <S.PlaylistSection>
+        <h2>Em Breve!!</h2>
         <img src={aboutImg3} alt="Ilustração de uma pessoa em obra" />
       </S.PlaylistSection>
 

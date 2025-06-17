@@ -10,7 +10,15 @@ export const TimelineSection = styled.section`
 export const PlaylistSection = styled.section`
   padding-top: 5%;
   display: flex;
+  align-items: center;
+  gap: 50px;
   justify-content: center;
+
+  h2 {
+    font-family: "Krona One", sans-serif;
+    font-size: 4rem;
+    color: #3f51b5;
+  }
 `;
 
 export const ExamSection = styled.section`

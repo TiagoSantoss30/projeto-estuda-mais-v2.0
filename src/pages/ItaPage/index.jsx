@@ -9,10 +9,10 @@ import download2 from "../../assets/download2.svg";
 import StudentAreaHeader from "../../components/StudentAreaHeader/index.jsx";
 import InfoSection from "../../components/InfoSection/index.jsx";
 import TimelineCard from "../../components/TimelineCard/index.jsx";
-import aboutImg3 from "../../assets/About/about-img3.svg";
 import itaExamImg from "../../assets/ita_fase1.pdf.jpg"
 import einstein from "../../assets/einstein.svg";
 import Footer from "../../components/Footer/index.jsx";
+import VideoPlaylist from "../../components/VideoPlaylist/index.jsx";
 
 function ItaPage() {
   return (
@@ -54,7 +54,7 @@ function ItaPage() {
       />
 
       <S.PlaylistSection>
-        <img src={aboutImg3} alt="Ilustração de uma pessoa em obra" />
+        <VideoPlaylist/>
       </S.PlaylistSection>
 
       <BlueHeader
