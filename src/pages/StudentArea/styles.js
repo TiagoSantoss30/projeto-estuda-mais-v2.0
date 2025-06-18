@@ -16,17 +16,41 @@ export const Div = styled.div`
     span {
       color: #3f51b5;
     }
+
+    @media (max-width: 1200px){
+      font-size: 2.5rem;
+      width: auto;
+    }
   }
 
   img {
     width: 30%;
     max-height: 400px;
   }
+
+  @media (max-width: 700px){
+    flex-direction: column-reverse;
+    text-align: center;
+
+    h1{
+      font-size: 2rem;
+    }
+
+    img{
+      width: 50%;
+    }
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  gap: 192px;
+  gap: clamp(30px, 8vw, 192px);
   margin-bottom: 2%;
+  padding: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;

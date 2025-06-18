@@ -1,10 +1,10 @@
 import * as S from "./styles";
 
-function StudentAreaCard({ CardImg, CardImgWidth, CardImgHeight, CardImgAltText, CardText, CardHref }) {
+function StudentAreaCard({ CardImg, CardImgAltText, CardText, CardHref, imgWidth }) {
   return (
     <S.LinkHref to={CardHref}>
-      <S.Div>
-        <img src={CardImg} alt={CardImgAltText} width={CardImgWidth} height={CardImgHeight} />
+      <S.Div imgWidth={imgWidth}>
+        <img src={CardImg} alt={CardImgAltText} />
         <p>{CardText}</p>
       </S.Div>
     </S.LinkHref>
