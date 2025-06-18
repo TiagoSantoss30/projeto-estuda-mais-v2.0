@@ -7,7 +7,7 @@ function HomeButtons(){
         <Link to={"/studentArea"}>
           Área Do Estudante
         </Link>
-        <Link className="login" to={"/about"} target="_blank">
+        <Link className="about" to={"/about"} target="_blank">
           Sobre Nós
         </Link>
       </S.Buttons>
