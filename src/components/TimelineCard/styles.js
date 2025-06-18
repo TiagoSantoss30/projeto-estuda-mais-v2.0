@@ -2,20 +2,21 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   background: linear-gradient(to bottom, #3f51b5 30%, #1976d2 97%);
-  width: 320px;
-  height: 420px;
+  width: clamp(250px, 30vw, 320px);
+  height: clamp(220px, 45vh, 420px);
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 
   img {
     width: 80%;
   }
 
   a {
-    width: 50%;
+    padding: 0.8rem 1.5rem;
     display: flex;
     justify-content: center;
     align-self: center;

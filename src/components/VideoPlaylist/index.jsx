@@ -7,7 +7,7 @@ import { FaPencilAlt } from "react-icons/fa";
 function VideoPlaylist(){
     return (
       <>
-        <img
+        <S.Img
           src={onlineLearning}
           alt="Ilustração de uma pessoa assistindo uma aula online"
         />
@@ -18,7 +18,7 @@ function VideoPlaylist(){
             target="_blank"
           >
             <S.Card>
-              <BiMath className="icone" />
+              <BiMath className="icone mat" />
               <h2>MATEMÁTICA</h2>
             </S.Card>
           </a>

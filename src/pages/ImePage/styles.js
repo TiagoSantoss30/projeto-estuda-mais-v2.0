@@ -1,10 +1,22 @@
 import styled from "styled-components";
 
+export const Main = styled.main`
+  @media (max-width: 1100px) {
+    padding: auto;
+  }
+`;
+
 export const TimelineSection = styled.section`
   padding: 5% 15%;
   display: flex;
   justify-content: center;
   gap: 231px;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
 `;
 
 export const PlaylistSection = styled.section`
@@ -14,10 +26,21 @@ export const PlaylistSection = styled.section`
   gap: 50px;
   justify-content: center;
 
+  img{
+    width: 35%;
+  }
+
   h2 {
     font-family: "Krona One", sans-serif;
     font-size: 4rem;
     color: #3f51b5;
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    h2{
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -31,8 +54,8 @@ export const ExamSectionContainer = styled.div`
   justify-content: space-around;
 
   img {
-    width: 375px;
-    height: 464px;
+    width: 50%;
+    max-width: 375px;
     border: 5px solid #3f51b5;
     border-radius: 20px;
   }
@@ -44,6 +67,10 @@ export const ExamSectionContainer = styled.div`
       color: #3f51b5;
       font-size: 3rem;
 
+      @media (max-width: 1100px) {
+        font-size: 2rem;
+      }
+
       span {
         color: #1976d2;
       }
@@ -52,6 +79,10 @@ export const ExamSectionContainer = styled.div`
     p {
       color: #333333;
     }
+  }
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    text-align: center;
   }
 `;
 
@@ -64,7 +95,7 @@ export const ExamSectionContainerBotoes = styled.div`
     background-color: #3f51b5;
     color: #ffffff;
     padding: 0.5rem;
-    width: 250px;
+    width: clamp(150px, 30vw, 250px);
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
@@ -72,6 +103,16 @@ export const ExamSectionContainerBotoes = styled.div`
 
     &:hover {
       background-color: #1976d2;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+
+    a {
+      width: 80%;
     }
   }
 `;
