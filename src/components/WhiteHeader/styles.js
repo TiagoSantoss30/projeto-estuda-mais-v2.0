@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Header = styled.header`
@@ -7,6 +6,10 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 700px){
+    justify-content: center;
+  }
 `;
 
 export const HeaderTitle = styled.h1`
@@ -19,6 +22,15 @@ export const HeaderTitle = styled.h1`
   span {
     font-size: 2.5rem;
   }
+
+  @media (max-width: 700px) {
+    margin-left: 0;
+    font-size: 1.2rem;
+
+    span{
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const HeaderLinks = styled.nav`
@@ -26,23 +38,9 @@ export const HeaderLinks = styled.nav`
   display: flex;
   gap: 5rem;
   align-items: center;
-`;
 
-export const HeaderButton = styled(Link)`
-  background-color: #3f51b5;
-  width: 200px;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
-  font-size: 1.2rem;
-  border-radius: 8px;
-
-  &:hover {
-    background-color: #fbbf24;
-    color: #333;
+  @media (max-width: 700px){
+    display: none;
   }
 `;
 

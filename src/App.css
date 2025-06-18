@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }

@@ -10,10 +10,6 @@ function WhiteHeader() {
         ESTUDA <span>+</span>
       </S.HeaderTitle>
       <S.HeaderLinks>
-        <S.HeaderButton to={"/about"} target="_blank">
-          Sobre nós
-        </S.HeaderButton>
-
         <S.HeaderMedia>
           <a href="#">
             <FaInstagram />
