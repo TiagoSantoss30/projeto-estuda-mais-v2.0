@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 function HomeButtons(){
     return (
       <S.Buttons>
-        <Link to={"/studentArea"}>
-          Área Do Estudante
+        <Link to={"/signUp"}>
+          Cadastre-se
         </Link>
-        <Link className="about" to={"/about"} target="_blank">
-          Sobre Nós
+        <Link className="login" to={"/login"} target="_blank">
+          Login
         </Link>
       </S.Buttons>
     );

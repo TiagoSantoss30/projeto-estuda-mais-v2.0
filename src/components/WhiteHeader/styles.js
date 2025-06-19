@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   background-color: #fff;
@@ -7,8 +8,8 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 700px){
-    justify-content: center;
+  @media (max-width: 700px) {
+    flex-direction: column;
   }
 `;
 
@@ -38,9 +39,28 @@ export const HeaderLinks = styled.nav`
   display: flex;
   gap: 5rem;
   align-items: center;
+`;
+
+export const HeaderButton = styled(Link)`
+  background-color: #3f51b5;
+  width: clamp(120px, 30vw, 200px);
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #fbbf24;
+    color: #333;
+  }
 
   @media (max-width: 700px){
-    display: none;
+    width: 100%;
+    margin-top: 20%;
   }
 `;
 
@@ -56,5 +76,9 @@ export const HeaderMedia = styled.div`
     &:hover {
       color: #fbbf24;
     }
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
   }
 `;
