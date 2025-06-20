@@ -1,17 +1,15 @@
-const { Pool } = require('pg');
-require('dotenv').config();
+// Versão para produção (deploy)
+const { Pool } = require("pg");
+require("dotenv").config();
 
 const pool = new Pool({
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
-    database: process.env.DB_DATABASE,
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
-// Agora exportamos um objeto com dois métodos:
-// 'query' para consultas simples e 'connect' para iniciar transações.
 module.exports = {
-    query: (text, params) => pool.query(text, params),
-    connect: () => pool.connect(),
+  query: (text, params) => pool.query(text, params),
+  connect: () => pool.connect(),
 };
