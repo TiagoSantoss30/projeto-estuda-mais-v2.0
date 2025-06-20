@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
-  width: 35%;
-  height: 650px;
-  padding: 1rem;
+  width: 100%;
+  max-width: 520px;
+  padding: 2.5rem;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
@@ -27,6 +27,7 @@ export const Form = styled.form`
 
   input {
     width: 100%;
+    max-width: 350px;
     height: 50px;
     border-radius: 20px;
     border: 1px solid #d1d5db;
@@ -43,7 +44,8 @@ export const Form = styled.form`
     color: #fff;
     border: none;
     border-radius: 20px;
-    width: 40%;
+    width: 100%;
+    max-width: 250px;
     padding: 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -52,6 +54,17 @@ export const Form = styled.form`
 
     &:hover {
       background-color: #1976d2;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    input {
+      font-size: 0.7rem;
+      text-align: center;
     }
   }
 `;

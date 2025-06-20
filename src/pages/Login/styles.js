@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to bottom, #3f51b5 30%, #1976d2 97%);
   display: flex;
-  justify-content: space-between;
-  padding: 5% 5% 0% 10%;
+  justify-content: space-around;
+  padding: 6rem 5%;
 
   div {
     margin-left: 5%;
@@ -24,7 +24,18 @@ export const Section = styled.section`
   }
 
   div img {
-    width: 702px;
-    height: 607px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      display: none;
+    }
   }
 `;
+

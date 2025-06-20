@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
-  margin: auto;
-  width: 35%;
-  height: 650px;
-  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 2.5rem;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
@@ -18,11 +17,12 @@ export const Form = styled.form`
     color: #3f51b5;
     text-align: center;
     font-size: 2rem;
-    line-height: 200%;
+    line-height: 1.4;
   }
 
   input {
-    width: 60%;
+    width: 100%;
+    max-width: 350px;
     height: 50px;
     border-radius: 20px;
     border: 1px solid #d1d5db;
@@ -38,7 +38,9 @@ export const Form = styled.form`
     color: #fff;
     border: none;
     border-radius: 20px;
-    width: 60%;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
     padding: 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -47,6 +49,17 @@ export const Form = styled.form`
 
     &:hover {
       background-color: #1976d2;
+    }
+  }
+
+  @media (max-width: 500px){
+    h1{
+      font-size: 1.2rem;
+    }
+
+    input{
+      font-size: 0.7rem;
+      text-align: center;
     }
   }
 `;
