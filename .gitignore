@@ -1,47 +1,10 @@
-<<<<<<< HEAD
-# Node.js
-node_modules/
-=======
 # Logs
 logs
 *.log
->>>>>>> 22cb9edcb50ab655e4ab86c0256fb0e2d0a3c891
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-<<<<<<< HEAD
-
-# Logs
-logs
-*.log
-*.log.*
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Environment files
-.env
-.env.*
-
-# Build output
-dist/
-build/
-out/
-coverage/
-
-# IDEs and editors
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# Misc
-*.swp
-*.bak
-*.tmp
-=======
 lerna-debug.log*
 
 node_modules
@@ -59,4 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
->>>>>>> 22cb9edcb50ab655e4ab86c0256fb0e2d0a3c891
