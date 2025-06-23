@@ -27,7 +27,7 @@ export const Buttons = styled.div`
     }
   }
 
-  .login {
+  .about {
     background-color: #1976d2;
   }
 

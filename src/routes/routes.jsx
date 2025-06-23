@@ -69,48 +69,33 @@ export function AppRoutes() {
           }
         />
         <Route
-          path="/signUp"
+          path="/StudentArea"
           element={
             <AnimatedPage>
-              <SignUp />
+              <StudentArea />
             </AnimatedPage>
           }
         />
         <Route
-          path="/login"
+          path="/itaPage"
           element={
             <AnimatedPage>
-              <Login />
+              <ItaPage />
+            </AnimatedPage>
+          }
+        />
+        <Route
+          path="/imePage"
+          element={
+            <AnimatedPage>
+              <ImePage />
             </AnimatedPage>
           }
         />
 
+
         {/* Rotas Protegidas */}
         <Route element={<ProtectedRoute />}>
-          <Route
-            path="/student-area"
-            element={
-              <AnimatedPage>
-                <StudentArea />
-              </AnimatedPage>
-            }
-          />
-          <Route
-            path="/itaPage"
-            element={
-              <AnimatedPage>
-                <ItaPage />
-              </AnimatedPage>
-            }
-          />
-          <Route
-            path="/imePage"
-            element={
-              <AnimatedPage>
-                <ImePage />
-              </AnimatedPage>
-            }
-          />
           {/* 2. ROTA DE ADMIN ADICIONADA AQUI */}
           <Route
             path="/admin"

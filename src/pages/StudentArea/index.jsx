@@ -35,7 +35,7 @@ function StudentArea() {
           setLoading(false);
         });
     } else {
-      navigate("/");
+      setLoading(false);
     }
   }, [navigate]);
 
